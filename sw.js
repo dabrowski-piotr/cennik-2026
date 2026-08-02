@@ -1,5 +1,5 @@
 /* Cennik 2026 — service worker: pelny tryb offline */
-const CACHE = 'cennik2026-v1';
+const CACHE = 'cennik2026-v2';
 const ASSETS = [
   './', './index.html', './manifest.webmanifest',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
