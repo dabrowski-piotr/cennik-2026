@@ -80,6 +80,29 @@ KROK 6 — instalacja na telefonie
 5. Wlacz tryb samolotowy i sprawdz, czy dziala. Powinna.
 
 
+
+IPHONE / IPAD — ROZNICE
+-----------------------
+Aplikacja dziala na iPhonie, ale instaluje sie inaczej:
+
+1. Otworz adres w SAFARI (nie w Chrome — na iOS tylko Safari robi to pewnie)
+2. Dotknij ikony UDOSTEPNIJ na dolnym pasku (kwadrat ze strzalka w gore)
+3. Przewin liste w dol i wybierz "Dodaj do ekranu glownego"
+4. Potwierdz przyciskiem "Dodaj"
+
+Na iPhonie nie ma przycisku "Zainstaluj na telefonie" — Safari nie
+obsluguje automatycznego monitu. Zamiast niego aplikacja pokazuje pasek
+z instrukcja. Mozna go zamknac krzyzykiem.
+
+Pobieranie proformy: na iPhonie uzywaj przycisku "Udostepnij proforme...",
+a nie "Pobierz". Zapisywanie plikow w trybie pelnoekranowym bywa na iOS
+zawodne, natomiast systemowy arkusz udostepniania dziala niezawodnie
+(mozna stamtad wyslac plik mailem albo zapisac w aplikacji Pliki).
+
+Pamiec koszyka: iOS potrafi skasowac dane aplikacji, jesli nie korzystasz
+z niej przez dluzszy czas. Koszyk i rabaty moga wtedy zniknac.
+Sam cennik i dzialanie offline pozostaja nienaruszone.
+
 KROK 7 (opcjonalnie) — prawdziwy plik APK
 -----------------------------------------
 1. Wejdz na www.pwabuilder.com
