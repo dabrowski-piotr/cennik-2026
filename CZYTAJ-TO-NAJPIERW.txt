@@ -1,0 +1,111 @@
+CENNIK 2026 — aplikacja na telefon
+==================================
+
+UWAGA NA POCZATEK
+-----------------
+Darmowe GitHub Pages dziala TYLKO z repozytorium publicznym. Oznacza to,
+ze kazdy, kto pozna adres, zobaczy caly cennik z cenami netto.
+Dolozylem robots.txt i znacznik noindex, wiec strona nie trafi do Google,
+ale adres pozostaje dostepny dla kazdego, kto go dostanie.
+Jesli cennik jest poufny — uzyj firmowego serwera albo Cloudflare Pages
+z logowaniem (Cloudflare Access, darmowe do 50 osob).
+
+
+PLIKI — wszystkie musza lezec razem, w jednym katalogu
+------------------------------------------------------
+  index.html               aplikacja (katalog, koszyk, generator proformy)
+  manifest.webmanifest     nazwa i ikony aplikacji
+  sw.js                    tryb offline
+  robots.txt               blokada wyszukiwarek
+  icon-*.png               ikony
+  apple-touch-icon.png     ikona dla iPhone'a
+
+
+KROK 1 — konto
+--------------
+Wejdz na github.com i zaloz konto (Sign up). Zapamietaj nazwe uzytkownika,
+bedzie czescia adresu aplikacji.
+
+
+KROK 2 — repozytorium
+---------------------
+1. Kliknij "+" w prawym gornym rogu > New repository
+2. Repository name:  cennik-2026
+   (male litery, bez spacji i polskich znakow)
+3. Zaznacz PUBLIC
+4. Nie zaznaczaj "Add a README file"
+5. Create repository
+
+
+KROK 3 — wgranie plikow
+-----------------------
+1. ROZPAKUJ najpierw archiwum ZIP. Wgrywasz pliki, NIE archiwum.
+2. Na stronie pustego repozytorium kliknij link "uploading an existing file"
+3. Przeciagnij do okna przegladarki WSZYSTKIE pliki z tego katalogu
+   (mozesz zaznaczyc je razem: Ctrl+A)
+4. Poczekaj — index.html wazy 1,2 MB
+5. Na dole kliknij zielony przycisk "Commit changes"
+
+WAZNE: pliki maja wyladowac bezposrednio w repozytorium, nie w podkatalogu.
+Po wgraniu powinienes widziec liste z index.html na wierzchu.
+
+
+KROK 4 — wlaczenie GitHub Pages
+-------------------------------
+1. W repozytorium kliknij zakladke "Settings" (na gorze)
+2. W menu po lewej wybierz "Pages"
+3. Source: "Deploy from a branch"
+4. Branch: main    Folder: / (root)    > Save
+5. Odswiez strone po 1-3 minutach. Na gorze pojawi sie adres:
+
+   https://TWOJA-NAZWA.github.io/cennik-2026/
+
+Pierwsze uruchomienie potrafi potrwac kilka minut. Jesli widzisz 404,
+poczekaj i odswiez.
+
+
+KROK 5 — sprawdzenie na komputerze
+----------------------------------
+Otworz ten adres w przegladarce. Powinienes zobaczyc katalog
+z 4483 artykulami. Jesli tak — dziala.
+
+
+KROK 6 — instalacja na telefonie
+--------------------------------
+1. Otworz ten sam adres w Chrome na Androidzie
+2. Dotknij przycisku "Zainstaluj na telefonie" w naglowku
+   albo: menu (trzy kropki) > "Dodaj do ekranu glownego"
+3. Potwierdz. Ikona pojawi sie na ekranie glownym.
+4. Uruchom z ikony — aplikacja otworzy sie bez paska przegladarki
+5. Wlacz tryb samolotowy i sprawdz, czy dziala. Powinna.
+
+
+KROK 7 (opcjonalnie) — prawdziwy plik APK
+-----------------------------------------
+1. Wejdz na www.pwabuilder.com
+2. Wklej adres swojej aplikacji > Start
+3. Wybierz Android > Generate Package
+4. Pobierz plik .apk i przeslij na telefon
+5. W telefonie zezwol na instalacje z nieznanych zrodel
+
+
+AKTUALIZACJA CENNIKA — dwa kroki, oba konieczne
+-----------------------------------------------
+1. W repozytorium: Add file > Upload files > wgraj nowy index.html
+   (ta sama nazwa nadpisze stary) > Commit changes
+2. Kliknij sw.js > ikona olowka > zmien numer w linii:
+       const CACHE = 'cennik2026-v1';
+   na 'cennik2026-v2' > Commit changes
+
+Bez kroku 2 telefony beda pokazywac stara wersje z pamieci podrecznej.
+
+
+NAJCZESTSZE PROBLEMY
+--------------------
+Strona 404              - poczekaj kilka minut; sprawdz, czy index.html
+                          lezy w glownym katalogu repozytorium
+Brak ikony aplikacji    - musi byc adres https; z pliku na dysku
+                          Android nie pozwoli zainstalowac
+Telefon pokazuje stare  - podnies numer CACHE w sw.js (patrz wyzej)
+dane                      albo odinstaluj i zainstaluj ponownie
+Wgralem ZIP             - rozpakuj i wgraj pliki pojedynczo
