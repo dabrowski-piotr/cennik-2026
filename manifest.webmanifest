@@ -1,7 +1,7 @@
 {
-  "name": "Cennik 2026 — katalog i oferty",
+  "name": "Cennik 2026 — katalog i zamówienia",
   "short_name": "Cennik 2026",
-  "description": "Katalog artykułów, koszyk z rabatami wg grup SBU i generator oferty proforma.",
+  "description": "Katalog artykułów, koszyk z rabatami wg grup SBU i generator zamówienia.",
   "lang": "pl",
   "dir": "ltr",
   "start_url": ".",
@@ -10,10 +10,28 @@
   "orientation": "any",
   "background_color": "#EFF1F2",
   "theme_color": "#2E3438",
-  "categories": ["business", "productivity"],
+  "categories": [
+    "business",
+    "productivity"
+  ],
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

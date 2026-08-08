@@ -1,4 +1,4 @@
-CENNIK 2026 — aplikacja na telefon
+CENNIK 2026 — aplikacja na telefon (wersja z logo fischer)
 ==================================
 
 UWAGA NA POCZATEK
@@ -94,7 +94,7 @@ Na iPhonie nie ma przycisku "Zainstaluj na telefonie" — Safari nie
 obsluguje automatycznego monitu. Zamiast niego aplikacja pokazuje pasek
 z instrukcja. Mozna go zamknac krzyzykiem.
 
-Pobieranie proformy: na iPhonie uzywaj przycisku "Udostepnij proforme...",
+Pobieranie zamowienia: na iPhonie uzywaj przycisku "Udostepnij zamowienie...",
 a nie "Pobierz". Zapisywanie plikow w trybie pelnoekranowym bywa na iOS
 zawodne, natomiast systemowy arkusz udostepniania dziala niezawodnie
 (mozna stamtad wyslac plik mailem albo zapisac w aplikacji Pliki).
@@ -117,8 +117,8 @@ AKTUALIZACJA CENNIKA — dwa kroki, oba konieczne
 1. W repozytorium: Add file > Upload files > wgraj nowy index.html
    (ta sama nazwa nadpisze stary) > Commit changes
 2. Kliknij sw.js > ikona olowka > zmien numer w linii:
-       const CACHE = 'cennik2026-v1';
-   na 'cennik2026-v2' > Commit changes
+       const CACHE = 'cennik2026-v2';
+   na 'cennik2026-v3' > Commit changes
 
 Bez kroku 2 telefony beda pokazywac stara wersje z pamieci podrecznej.
 
@@ -132,3 +132,14 @@ Brak ikony aplikacji    - musi byc adres https; z pliku na dysku
 Telefon pokazuje stare  - podnies numer CACHE w sw.js (patrz wyzej)
 dane                      albo odinstaluj i zainstaluj ponownie
 Wgralem ZIP             - rozpakuj i wgraj pliki pojedynczo
+
+
+PLIK DLA KLIENTA — CO ZAWIERA
+-----------------------------
+Aplikacja generuje plik "zamowienie-RRRR-MM-DD.xlsx" z JEDNYM arkuszem.
+NIE ma w nim cennika — klient widzi tylko wybrane przez siebie pozycje.
+Plik wazy ok. 26 KB. Liczba opakowan i rabaty pozostaja edytowalne,
+wszystkie wartosci przelicza sie w Excelu.
+
+Pelny cennik masz w osobnym pliku ZAMOWIENIE_z_cennikiem_2026.xlsx —
+ten trzymaj u siebie, nie wysylaj klientom.
